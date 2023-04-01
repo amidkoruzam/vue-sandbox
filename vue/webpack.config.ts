@@ -27,8 +27,8 @@ const config: Configuration = {
         },
       },
       {
-        test: /\.css$/,
-        use: ["vue-style-loader", "css-loader"],
+        test: /\.p(ost)?css$/i,
+        use: ["vue-style-loader", "css-loader", "postcss-loader"],
       },
     ],
   },
