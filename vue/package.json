@@ -11,9 +11,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
     "@types/node": "^18.15.11",
     "@types/webpack": "^5.28.1",
     "@types/webpack-dev-server": "^4.7.2",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "postcss-loader": "^7.1.0",
     "postcss-preset-env": "^8.3.0",

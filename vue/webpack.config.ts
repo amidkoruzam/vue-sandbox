@@ -27,6 +27,16 @@ const config: Configuration = {
         },
       },
       {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-typescript"],
+          },
+        },
+      },
+      {
         test: /\.p(ost)?css$/i,
         use: ["vue-style-loader", "css-loader", "postcss-loader"],
       },
