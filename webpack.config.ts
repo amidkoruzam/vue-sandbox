@@ -1,6 +1,6 @@
 import { Configuration as WebpackConfiguration } from "webpack";
 import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server";
-
+import Dotenv from "dotenv-webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { VueLoaderPlugin } from "vue-loader";
 
@@ -47,6 +47,7 @@ const config: Configuration = {
     new HtmlWebpackPlugin({
       template: "public/index.html",
     }),
+    new Dotenv(),
   ],
   devServer: {
     port: 3000,
