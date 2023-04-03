@@ -1177,6 +1177,18 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz#2cbcf822bf3764c9658c4d2e568bd0c0cb748016"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
+"@datadog/browser-core@4.37.0":
+  version "4.37.0"
+  resolved "https://registry.yarnpkg.com/@datadog/browser-core/-/browser-core-4.37.0.tgz#7039586fac697f867cafcbcf458d8fcd6e8035ff"
+  integrity sha512-UMsG+xaAbZMfBSo4PJmj8Y4uvo393RSO6Enq6op1j0rVupVLarPw0LGYZF85UywDROwixzPnFn4S6DWMpeiJkA==
+
+"@datadog/browser-logs@^4.37.0":
+  version "4.37.0"
+  resolved "https://registry.yarnpkg.com/@datadog/browser-logs/-/browser-logs-4.37.0.tgz#ffca23ee72dd552fb0d155e6ff358375d9570619"
+  integrity sha512-t7qh2W7Ofp+JKMCnmFhamca9sEZSFyvgxd7yK6n0F1hHekIbL2LRcRwCISkwiyO5UZy01cn5QQdBaYkBiy8Cpw==
+  dependencies:
+    "@datadog/browser-core" "4.37.0"
+
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"

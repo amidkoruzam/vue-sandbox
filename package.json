@@ -30,6 +30,7 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
+    "@datadog/browser-logs": "^4.37.0",
     "html-webpack-plugin": "^5.5.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
