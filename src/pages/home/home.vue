@@ -3,7 +3,14 @@
 </template>
 
 <script>
+import { useHomePage } from "./model";
+
 export default {
   name: "Home",
+  setup() {
+    useHomePage();
+
+    return {};
+  },
 };
 </script>
