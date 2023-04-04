@@ -3,6 +3,7 @@ import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-serv
 import Dotenv from "dotenv-webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { VueLoaderPlugin } from "vue-loader";
+import path from "path";
 
 type Configuration = WebpackConfiguration & {
   devServer?: WebpackDevServerConfiguration;
@@ -16,6 +17,9 @@ const config: Configuration = {
   },
   resolve: {
     extensions: [".ts", ".js"],
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
   },
   module: {
     rules: [
