@@ -6,6 +6,7 @@ datadogLogs.init({
   site: process.env.DATADOG_LOGGER_SITE,
   forwardErrorsToLogs: true,
   sessionSampleRate: 100,
+  env: config.ENV,
 });
 
 export const logger = datadogLogs.logger;
