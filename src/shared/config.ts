@@ -1,6 +1,7 @@
 const configMap = {
   DATADOG_LOGGER_CLIENT_TOKEN: process.env.DATADOG_LOGGER_CLIENT_TOKEN,
   DATADOG_LOGGER_SITE: process.env.DATADOG_LOGGER_SITE,
+  ENV: process.env.ENV,
 };
 
 let key: keyof typeof configMap;
