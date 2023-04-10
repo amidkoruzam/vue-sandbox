@@ -17,9 +17,11 @@ const runServer = async () => {
     compiler.hooks.done.tap("done", (stats) => res(stats))
   );
 
-  const assets = stats.toJson().chunks;
+  const js = stats
+    .toJson()
+    .assetsByChunkName?.main.filter((asset) => asset.endsWith(".js"));
 
-  writeFileSync("stats.json", JSON.stringify(assets, null, 4), "utf-8");
+  writeFileSync("stats.json", JSON.stringify(js, null, 4), "utf-8");
 };
 
 runServer();
