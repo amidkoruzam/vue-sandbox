@@ -16,7 +16,7 @@ const config: Configuration = {
     path: __dirname + "/dist",
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".vue"],
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
