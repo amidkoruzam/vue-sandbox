@@ -16,7 +16,7 @@ const config: Configuration = {
     path: __dirname + "/dist",
   },
   resolve: {
-    extensions: [".ts", ".js", ".vue"],
+    extensions: [".ts", ".js"],
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
@@ -31,14 +31,9 @@ const config: Configuration = {
         },
       },
       {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/preset-typescript"],
-          },
-        },
+        test: /\.ts$/,
+        loader: "ts-loader",
+        options: { appendTsSuffixTo: [/\.vue$/] },
       },
       {
         test: /\.p(ost)?css$/i,
